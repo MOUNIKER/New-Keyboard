@@ -65,12 +65,10 @@ extension MainViewController: KeyboardDelegate {
         } else if textFields[5].isEditing {
             textFields[5].text = "\(number)"
             
-            textFields[0].isUserInteractionEnabled = false
-            textFields[1].isUserInteractionEnabled = false
-            textFields[2].isUserInteractionEnabled = false
-            textFields[3].isUserInteractionEnabled = false
-            textFields[4].isUserInteractionEnabled = false
-            textFields[5].isUserInteractionEnabled = false
+            textFields.forEach { textField in
+                textField.isUserInteractionEnabled = false
+            }
+            
             
             textFields[5].resignFirstResponder()
             
@@ -110,6 +108,8 @@ extension MainViewController: KeyboardDelegate {
             code += i.text ?? ""
         }
         print(code)
+        textFields[5].resignFirstResponder()
+        view.endEditing(true)
     }
 }
 

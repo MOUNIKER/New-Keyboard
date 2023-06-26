@@ -7,25 +7,26 @@ import UIKit
 
 class Keyboard: UIView {
     
-   
+    @IBOutlet var numberButtons: [UIButton]!
     
     weak var delegate: KeyboardDelegate?
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         addXibView()
+        shuffleNumberKeypad()
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         addXibView()
+        shuffleNumberKeypad()
     }
     
-    func addXibView() {
+    private func addXibView() {
         let xibFileName = "Keyboard" // xib extention not included
         
         let view = Bundle.main.loadNibNamed(xibFileName, owner: self, options: nil)?[0] as! UIView
-        
         self.addSubview(view)
         view.frame = self.bounds
     }
@@ -42,6 +43,17 @@ class Keyboard: UIView {
         delegate?.doneBtnTapped()
     }
     
+    private func shuffleNumberKeypad() {
+            // Create an array of numbers with shuffeled
+        var numbers = Array(0...9).shuffled()
+            
+            // Assign the shuffled numbers to the buttons
+            for (index, button) in numberButtons.enumerated() {
+                let number = numbers[index]
+                button.setTitle(String(number), for: .normal)
+            }
+        }
+    
 
     
 }
@@ -55,8 +67,4 @@ protocol KeyboardDelegate: AnyObject {
     func doneBtnTapped()
 }
 
-/**
- 
- https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/swift-create-a-custom-keyboard-in-your-app-%E5%9C%A8%E4%BD%A0%E7%9A%84-app-%E4%B8%AD%E8%87%AA%E5%AE%9A%E7%BE%A9%E9%8D%B5%E7%9B%A4-f58eb55cc963
- 
- */
+
