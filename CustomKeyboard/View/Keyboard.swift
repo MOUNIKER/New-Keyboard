@@ -32,8 +32,12 @@ class Keyboard: UIView {
     }
     
     @IBAction func numKeyTapped(_ sender: UIButton) {
-        delegate?.numKeyTapped(number: sender.tag)
+        //string to store btn title
+        let  a = sender.titleLabel?.text ?? ""
+        delegate?.numKeyTapped(number: Int(a) ?? 0)
+        
     }
+    
     
     @IBAction func deleteKeyTapped(_ sender: UIButton) {
         delegate?.deleteKeyTapped()
@@ -45,7 +49,7 @@ class Keyboard: UIView {
     
     private func shuffleNumberKeypad() {
             // Create an array of numbers with shuffeled
-        var numbers = Array(0...9).shuffled()
+        let numbers = Array(0...9).shuffled()
             
             // Assign the shuffled numbers to the buttons
             for (index, button) in numberButtons.enumerated() {

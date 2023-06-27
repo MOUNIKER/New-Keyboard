@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2756E97A2A49C6CC00A50617 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2756E9792A49C6CC00A50617 /* KeyboardViewController.swift */; };
 		2756E97E2A49C6CC00A50617 /* Keyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2756E9772A49C6CC00A50617 /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		27646A0E2A4B093E009C4FBC /* PulseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27646A0D2A4B093E009C4FBC /* PulseAnimation.swift */; };
 		D02372442931174B0087ED24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02372432931174B0087ED24 /* AppDelegate.swift */; };
 		D02372462931174B0087ED24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02372452931174B0087ED24 /* SceneDelegate.swift */; };
 		D023724D2931174D0087ED24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D023724C2931174D0087ED24 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		2756E9772A49C6CC00A50617 /* Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		2756E9792A49C6CC00A50617 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		2756E97B2A49C6CC00A50617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27646A0D2A4B093E009C4FBC /* PulseAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PulseAnimation.swift; path = "../../../../Downloads/WatchList 4/WatchList/PulseAnimation.swift"; sourceTree = "<group>"; };
 		D02372402931174B0087ED24 /* CustomKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D02372432931174B0087ED24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D02372452931174B0087ED24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			children = (
 				D023725D293117B30087ED24 /* Keyboard.xib */,
 				D050720329311D36007070CF /* Keyboard.swift */,
+				27646A0D2A4B093E009C4FBC /* PulseAnimation.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				D023725B293117870087ED24 /* MainViewController.swift in Sources */,
 				D02372442931174B0087ED24 /* AppDelegate.swift in Sources */,
 				D050720429311D36007070CF /* Keyboard.swift in Sources */,
+				27646A0E2A4B093E009C4FBC /* PulseAnimation.swift in Sources */,
 				D02372462931174B0087ED24 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
