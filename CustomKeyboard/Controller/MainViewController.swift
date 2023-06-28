@@ -65,12 +65,12 @@ extension MainViewController: KeyboardDelegate {
         } else if textFields[5].isEditing {
             textFields[5].text = "\(number)"
             
-            textFields.forEach { textField in
-                textField.isUserInteractionEnabled = false
-            }
+//            textFields.forEach { textField in
+//                textField.isUserInteractionEnabled = false
+//            }
             
             
-            textFields[5].resignFirstResponder()
+           // textFields[5].resignFirstResponder()
             
             if !textFields[5].isFirstResponder {
                 for i in textFields {

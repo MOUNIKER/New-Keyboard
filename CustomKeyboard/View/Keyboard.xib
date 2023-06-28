@@ -12,10 +12,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Keyboard" customModule="CustomKeyboard" customModuleProvider="target">
             <connections>
-                <outlet property="firstView1" destination="dbq-Bu-bIw" id="WBY-2D-Eo5"/>
-                <outlet property="firstView2" destination="maf-Fu-Abs" id="V34-M7-jjD"/>
-                <outlet property="secondView1" destination="Lgx-zB-FRG" id="djC-pk-9om"/>
-                <outlet property="secondView2" destination="ZI9-Hd-q6Y" id="dBK-X3-iNh"/>
+                <outlet property="deleteImg" destination="dQE-Ht-ARB" id="R8d-Jt-1VY"/>
+                <outlet property="deleteView" destination="bc7-UV-Uc0" id="noi-zh-3ad"/>
+                <outlet property="deletebtn" destination="BYO-o4-elH" id="2K3-CR-D59"/>
+                <outlet property="myKeyBoardView" destination="iN0-l3-epB" id="ZNn-Lf-WV8"/>
+                <outlet property="resignImg" destination="EoM-0S-3Yz" id="fx8-UU-L1v"/>
+                <outlet property="resignView" destination="9dR-oe-Zk8" id="YSw-Nb-Hs1"/>
                 <outletCollection property="numberButtons" destination="Soe-A3-4mE" collectionClass="NSMutableArray" id="Zam-KP-HkL"/>
                 <outletCollection property="numberButtons" destination="lWV-uN-RRB" collectionClass="NSMutableArray" id="eCz-nC-MaK"/>
                 <outletCollection property="numberButtons" destination="LAe-Dz-yyh" collectionClass="NSMutableArray" id="tN9-ga-FKT"/>
@@ -558,7 +560,7 @@
                                         <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYO-o4-elH">
                                             <rect key="frame" x="0.0" y="0.0" width="130" height="50"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system"/>
