@@ -29,7 +29,6 @@ class MainViewController: UIViewController {
                 txfObject.delegate = self
             }
         }
-        
         textFields[0].becomeFirstResponder()
     }
 }
@@ -50,7 +49,7 @@ extension MainViewController: KeyboardDelegate {
             textFields[2].becomeFirstResponder()
         } else if textFields[2].isEditing {
             textFields[2].text = "\(number)"
-        
+            
             textFields[3].becomeFirstResponder()
         } else if textFields[3].isEditing {
             textFields[3].text = "\(number)"
@@ -65,12 +64,7 @@ extension MainViewController: KeyboardDelegate {
         } else if textFields[5].isEditing {
             textFields[5].text = "\(number)"
             
-//            textFields.forEach { textField in
-//                textField.isUserInteractionEnabled = false
-//            }
-            
-            
-           // textFields[5].resignFirstResponder()
+            textFields[5].resignFirstResponder()
             
             if !textFields[5].isFirstResponder {
                 for i in textFields {

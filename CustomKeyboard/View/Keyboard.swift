@@ -8,26 +8,16 @@ import UIKit
 class Keyboard: UIView {
     
     @IBOutlet var numberButtons: [UIButton]!
-    
     @IBOutlet var firstView: [UIView]!
-    
     @IBOutlet var secondView: [UIView]!
-    
     @IBOutlet var myKeyBoardView: UIView!
-    
     @IBOutlet weak var deleteView: UIView!
     @IBOutlet weak var deleteImg: UIImageView!
-    
     @IBOutlet weak var deletebtn: UIButton!
-    
     @IBOutlet weak var resignView: UIView!
-    
     @IBOutlet weak var resignImg: UIImageView!
     
     weak var delegate: KeyboardDelegate?
-    
-    
-    
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -42,7 +32,6 @@ class Keyboard: UIView {
         
     }
     
-    
     private func addXibView() {
         let xibFileName = "Keyboard" // xib extention not included
         
@@ -51,8 +40,6 @@ class Keyboard: UIView {
         //  view.backgroundColor = UIColor.white
         randomizeColors()
         view.frame = self.bounds
-        
-        
     }
     
     @IBAction func numKeyTapped(_ sender: UIButton) {
@@ -64,8 +51,6 @@ class Keyboard: UIView {
         pulseAnimation(index: sender.tag)
         
     }
-    
-    
     
     @IBAction func deleteKeyTapped(_ sender: UIButton) {
         delegate?.deleteKeyTapped()
@@ -92,7 +77,7 @@ class Keyboard: UIView {
                 let red: CGFloat = 225.0 / 255.0
                 let green: CGFloat = 246.0 / 255.0
                 let blue: CGFloat = 245.0 / 255.0
-
+                
                 // Create a UIColor object with the RGB values
                 let color = UIColor(red: red, green: green, blue: blue, alpha: 1.0)
                 requiredView.backgroundColor = color
@@ -103,7 +88,6 @@ class Keyboard: UIView {
     }
     
     func pulseAnimation(index: Int) {
-        
         secondView.forEach({$0.layer.sublayers?.forEach({$0.removeAllAnimations()})})
         //print("Second View \(secondView.forEach({print("item \($0.layer.sublayers ?? [])")}))")
         let first = firstView[index]
@@ -116,16 +100,13 @@ class Keyboard: UIView {
         pulse1.animationDuration = 2
         pulse1.backgroundColor = UIColor.white.cgColor
         second.layer.insertSublayer(pulse1, below: second.layer)
-        
     }
     func randomizeColors() {
-        
-        
         // Define the RGB components for the desired color
         let red: CGFloat = 225.0 / 255.0
         let green: CGFloat = 246.0 / 255.0
         let blue: CGFloat = 245.0 / 255.0
-
+        
         // Create a UIColor object with the RGB values
         let color = UIColor(red: red, green: green, blue: blue, alpha: 1.0)
         
@@ -158,9 +139,6 @@ class Keyboard: UIView {
             button.setTitleColor(UIColor.black, for: .normal)
         }
     }
-    
-    
-    
 }
 
 protocol KeyboardDelegate: AnyObject {
