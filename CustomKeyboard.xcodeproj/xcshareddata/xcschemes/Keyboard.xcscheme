@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2756E9762A49C6CC00A50617"
-               BuildableName = "Keyboard.appex"
-               BlueprintName = "Keyboard"
+               BuildableName = "KeyboardName.appex"
+               BlueprintName = "KeyboardName"
                ReferencedContainer = "container:CustomKeyboard.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

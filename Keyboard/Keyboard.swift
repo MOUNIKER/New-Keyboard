@@ -17,7 +17,7 @@ class Keyboard: UIView {
     @IBOutlet weak var resignView: UIView!
     @IBOutlet weak var resignImg: UIImageView!
     
-    weak var delegate: KeyboardDelegate?
+//    weak var delegate: KeyboardDelegate?
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -33,23 +33,21 @@ class Keyboard: UIView {
     }
     
     private func addXibView() {
-        let xibFileName = "Keyboard" // xib extention not included
+        let xibFileName = "KeyboardViewController" // xib extention not included
         
         let view = Bundle.main.loadNibNamed(xibFileName, owner: self, options: nil)?[0] as! UIView
         self.addSubview(view)
-        //  view.backgroundColor = UIColor.white
         randomizeColors()
         view.frame = self.bounds
     }
     
     @IBAction func numKeyTapped(_ sender: UIButton) {
         //string to store btn title
-        print("button tag \(sender.tag)")
+        //print("button tag \(sender.tag)")
         let  a = sender.titleLabel?.text ?? ""
         let index = Int(a) ?? 0
         delegate?.numKeyTapped(number: index)
         pulseAnimation(index: sender.tag)
-        
     }
     
     @IBAction func deleteKeyTapped(_ sender: UIButton) {
@@ -72,6 +70,7 @@ class Keyboard: UIView {
             button.tag = index
         }
         
+        // To get the circle shaped button and the exact colour of the button using RGB values
         firstView.forEach({$0.subviews.forEach { imgView in
             if let requiredView = imgView as? UIImageView {
                 let red: CGFloat = 225.0 / 255.0
@@ -101,6 +100,7 @@ class Keyboard: UIView {
         pulse1.backgroundColor = UIColor.white.cgColor
         second.layer.insertSublayer(pulse1, below: second.layer)
     }
+    // Colour Configuration
     func randomizeColors() {
         // Define the RGB components for the desired color
         let red: CGFloat = 225.0 / 255.0
@@ -112,6 +112,9 @@ class Keyboard: UIView {
         
         // To change the backgorundColour of Keypad
         myKeyBoardView.backgroundColor = UIColor.white
+        
+        // To get the same background color
+        // Keep the same background color same for the myKeyBoardView, deleteView,resignView and the firstView
         
         // To change the backgorundColour of delete button
         deleteView.backgroundColor = UIColor.white
@@ -141,13 +144,6 @@ class Keyboard: UIView {
     }
 }
 
-protocol KeyboardDelegate: AnyObject {
-    
-    func numKeyTapped(number: Int)
-    
-    func deleteKeyTapped()
-    
-    func doneBtnTapped()
-}
+
 
 

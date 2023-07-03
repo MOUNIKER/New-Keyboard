@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="KeyboardName" customModuleProvider="target">
+            <connections>
+                <outlet property="myKeyBoardView" destination="iN0-l3-epB" id="fXx-fT-nvI"/>
+                <outletCollection property="numberButtons" destination="MDd-cc-VFA" collectionClass="NSMutableArray" id="FyQ-nK-jnz"/>
+                <outletCollection property="numberButtons" destination="tZM-gx-uYB" collectionClass="NSMutableArray" id="ZGW-VI-OFS"/>
+                <outletCollection property="numberButtons" destination="cjI-QT-Itt" collectionClass="NSMutableArray" id="NLO-GE-vkQ"/>
+                <outletCollection property="numberButtons" destination="RYX-2s-ZpW" collectionClass="NSMutableArray" id="Z16-IH-48V"/>
+                <outletCollection property="numberButtons" destination="hB8-vh-TDD" collectionClass="NSMutableArray" id="Unf-Qq-cP0"/>
+                <outletCollection property="numberButtons" destination="ccX-ri-eWv" collectionClass="NSMutableArray" id="SZV-mL-koE"/>
+                <outletCollection property="numberButtons" destination="0m6-j9-Vap" collectionClass="NSMutableArray" id="O1n-G1-jTd"/>
+                <outletCollection property="numberButtons" destination="QJ0-qH-g4A" collectionClass="NSMutableArray" id="UGo-sE-zgR"/>
+                <outletCollection property="numberButtons" destination="x8V-7D-CAN" collectionClass="NSMutableArray" id="G1n-6o-flS"/>
+                <outletCollection property="numberButtons" destination="ZfO-Nq-Lf3" collectionClass="NSMutableArray" id="wdJ-EL-pP2"/>
+                <outletCollection property="firstView" destination="yK0-V5-lPd" collectionClass="NSMutableArray" id="2co-9v-djX"/>
+                <outletCollection property="secondView" destination="fpa-Nk-7La" collectionClass="NSMutableArray" id="plD-xS-lYo"/>
+                <outletCollection property="firstView" destination="Oez-hz-IXa" collectionClass="NSMutableArray" id="UJP-dw-LoW"/>
+                <outletCollection property="firstView" destination="xPG-GX-wvD" collectionClass="NSMutableArray" id="VEJ-AF-4mW"/>
+                <outletCollection property="firstView" destination="VPi-tL-Wy9" collectionClass="NSMutableArray" id="iSh-hE-cxv"/>
+                <outletCollection property="firstView" destination="DnJ-L9-kAS" collectionClass="NSMutableArray" id="qcE-0F-huy"/>
+                <outletCollection property="firstView" destination="L5v-F2-23i" collectionClass="NSMutableArray" id="57k-wg-caP"/>
+                <outletCollection property="secondView" destination="zMG-aU-WOR" collectionClass="NSMutableArray" id="y2L-DU-lDQ"/>
+                <outletCollection property="secondView" destination="Rah-Cg-JWB" collectionClass="NSMutableArray" id="qcP-jL-X0q"/>
+                <outletCollection property="secondView" destination="G0H-tv-NB1" collectionClass="NSMutableArray" id="IRU-HX-PqS"/>
+                <outletCollection property="secondView" destination="qVN-yA-pku" collectionClass="NSMutableArray" id="GPh-Iu-deI"/>
+                <outletCollection property="secondView" destination="6Go-bz-yyF" collectionClass="NSMutableArray" id="Mlz-Go-Avv"/>
+                <outletCollection property="firstView" destination="eXt-HZ-2my" collectionClass="NSMutableArray" id="0vf-2G-ueb"/>
+                <outletCollection property="secondView" destination="sDu-jc-UkG" collectionClass="NSMutableArray" id="XtP-hh-Zww"/>
+                <outletCollection property="firstView" destination="hv6-Q5-MX5" collectionClass="NSMutableArray" id="pBl-Px-9st"/>
+                <outletCollection property="secondView" destination="XpW-RO-Tqk" collectionClass="NSMutableArray" id="Rwt-Hl-uCp"/>
+                <outletCollection property="firstView" destination="3ll-v6-biw" collectionClass="NSMutableArray" id="DsZ-6g-VGM"/>
+                <outletCollection property="secondView" destination="fXd-sE-G75" collectionClass="NSMutableArray" id="pNz-Ve-1YY"/>
+                <outletCollection property="firstView" destination="taw-Sd-Kif" collectionClass="NSMutableArray" id="Wq9-Tp-qj7"/>
+                <outletCollection property="secondView" destination="XS4-7Y-u6T" collectionClass="NSMutableArray" id="Z57-Vf-ooe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="350"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="KvR-i1-X5Q">
+                    <rect key="frame" x="10" y="0.0" width="373" height="306"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yox-2V-t3o">
+                            <rect key="frame" x="0.0" y="0.0" width="373" height="76.666666666666671"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yK0-V5-lPd">
+                                    <rect key="frame" x="0.0" y="0.0" width="124.33333333333333" height="76.666666666666671"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fpa-Nk-7La">
+                                            <rect key="frame" x="0.0" y="0.0" width="124.33333333333333" height="76.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDd-cc-VFA" customClass="CustomKeyButton" customModule="KeyboardName" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="124.33333333333333" height="76.666666666666671"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                    <connections>
+                                                        <action selector="numKeyTapped:" destination="-1" eventType="touchUpInside" id="3fX-EP-we9"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oez-hz-IXa">
+                                    <rect key="frame" x="124.33333333333334" y="0.0" width="124.33333333333334" height="76.666666666666671"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zMG-aU-WOR">
+                                            <rect key="frame" x="0.0" y="0.0" width="124.33333333333334" height="76.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZM-gx-uYB" customClass="CustomKeyButton" customModule="KeyboardName" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="124.33333333333334" height="76.666666666666671"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                    <connections>
+                                                        <action selector="numKeyTapped:" destination="-1" eventType="touchUpInside" id="B2K-XE-7HQ"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xPG-GX-wvD">
+                                    <rect key="frame" x="248.66666666666671" y="0.0" width="124.33333333333334" height="76.666666666666671"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rah-Cg-JWB">
+                                            <rect key="frame" x="0.0" y="0.0" width="124.33333333333334" height="76.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjI-QT-Itt" customClass="CustomKeyButton" customModule="KeyboardName" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="124.33333333333334" height="76.666666666666671"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                    <connections>
+                                                        <action selector="numKeyTapped:" destination="-1" eventType="touchUpInside" id="TvC-WN-skb"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bU5-3R-SXq">
+                            <rect key="frame" x="0.0" y="76.666666666666686" width="373" height="76.333333333333314"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VPi-tL-Wy9">
+                                    <rect key="frame" x="0.0" y="0.0" width="124.33333333333333" height="76.333333333333329"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G0H-tv-NB1">
+                                            <rect key="frame" x="0.0" y="0.0" width="124.33333333333333" height="76.333333333333329"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYX-2s-ZpW" customClass="CustomKeyButton" customModule="KeyboardName" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="124.33333333333333" height="76.333333333333329"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                    <connections>
+                                                        <action selector="numKeyTapped:" destination="-1" eventType="touchUpInside" id="X4R-Gg-M7X"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DnJ-L9-kAS">
+                                    <rect key="frame" x="124.33333333333334" y="0.0" width="124.33333333333334" height="76.333333333333329"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qVN-yA-pku">
+                                            <rect key="frame" x="0.0" y="0.0" width="124.33333333333334" height="76.333333333333329"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hB8-vh-TDD" customClass="CustomKeyButton" customModule="KeyboardName" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="124.33333333333334" height="76.333333333333329"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                    <connections>
+                                                        <action selector="numKeyTapped:" destination="-1" eventType="touchUpInside" id="e1n-u3-fyo"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L5v-F2-23i">
+                                    <rect key="frame" x="248.66666666666671" y="0.0" width="124.33333333333334" height="76.333333333333329"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Go-bz-yyF">
+                                            <rect key="frame" x="0.0" y="0.0" width="124.33333333333334" height="76.333333333333329"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccX-ri-eWv" customClass="CustomKeyButton" customModule="KeyboardName" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="124.33333333333334" height="76.333333333333329"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                    <connections>
+                                                        <action selector="numKeyTapped:" destination="-1" eventType="touchUpInside" id="ox9-2R-P4R"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8T6-Mc-nWR">
+                            <rect key="frame" x="0.0" y="153" width="373" height="76.666666666666686"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eXt-HZ-2my">
+                                    <rect key="frame" x="0.0" y="0.0" width="124.33333333333333" height="76.666666666666671"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sDu-jc-UkG">
+                                            <rect key="frame" x="0.0" y="0.0" width="124.33333333333333" height="76.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0m6-j9-Vap" customClass="CustomKeyButton" customModule="KeyboardName" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="124.33333333333333" height="76.666666666666671"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                    <connections>
+                                                        <action selector="numKeyTapped:" destination="-1" eventType="touchUpInside" id="MPU-NZ-a0g"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hv6-Q5-MX5">
+                                    <rect key="frame" x="124.33333333333334" y="0.0" width="124.33333333333334" height="76.666666666666671"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XpW-RO-Tqk">
+                                            <rect key="frame" x="0.0" y="0.0" width="124.33333333333334" height="76.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJ0-qH-g4A" customClass="CustomKeyButton" customModule="KeyboardName" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="124.33333333333334" height="76.666666666666671"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                    <connections>
+                                                        <action selector="numKeyTapped:" destination="-1" eventType="touchUpInside" id="P7h-vX-Be8"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ll-v6-biw">
+                                    <rect key="frame" x="248.66666666666671" y="0.0" width="124.33333333333334" height="76.666666666666671"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fXd-sE-G75">
+                                            <rect key="frame" x="0.0" y="0.0" width="124.33333333333334" height="76.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8V-7D-CAN" customClass="CustomKeyButton" customModule="KeyboardName" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="124.33333333333334" height="76.666666666666671"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                    <connections>
+                                                        <action selector="numKeyTapped:" destination="-1" eventType="touchUpInside" id="dUD-jV-c55"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hH6-hd-i7e">
+                            <rect key="frame" x="0.0" y="229.66666666666666" width="373" height="76.333333333333343"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oqD-1z-rvc">
+                                    <rect key="frame" x="0.0" y="0.0" width="124.33333333333333" height="76.333333333333329"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xFI-Qz-q9Y">
+                                            <rect key="frame" x="0.0" y="0.0" width="124.33333333333333" height="76.333333333333329"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wn-Kl-DQp" customClass="CustomKeyButton" customModule="KeyboardName" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="124.33333333333333" height="76.333333333333329"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="delete.left.fill" catalog="system"/>
+                                                    <connections>
+                                                        <action selector="deleteKeyTapped:" destination="-1" eventType="touchUpInside" id="yUu-WQ-Ylk"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="taw-Sd-Kif">
+                                    <rect key="frame" x="124.33333333333334" y="0.0" width="124.33333333333334" height="76.333333333333329"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XS4-7Y-u6T">
+                                            <rect key="frame" x="0.0" y="0.0" width="124.33333333333334" height="76.333333333333329"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfO-Nq-Lf3" customClass="CustomKeyButton" customModule="KeyboardName" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="124.33333333333334" height="76.333333333333329"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                    <connections>
+                                                        <action selector="numKeyTapped:" destination="-1" eventType="touchUpInside" id="RE5-Pm-1Vu"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3MT-dK-aWh">
+                                    <rect key="frame" x="248.66666666666671" y="0.0" width="124.33333333333334" height="76.333333333333329"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WVf-rK-jRt">
+                                            <rect key="frame" x="0.0" y="0.0" width="124.33333333333334" height="76.333333333333329"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6G-j7-rYf" customClass="CustomKeyButton" customModule="KeyboardName" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="124.33333333333334" height="76.333333333333329"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.98781906909999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="xmark.app" catalog="system"/>
+                                                    <connections>
+                                                        <action selector="doneBtnTapped:" destination="-1" eventType="touchUpInside" id="CIl-Nx-5mf"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="306" id="iLL-op-Yxh"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="KvR-i1-X5Q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4Bu-ul-O2S"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KvR-i1-X5Q" secondAttribute="trailing" constant="10" id="7xh-pu-n6u"/>
+                <constraint firstItem="KvR-i1-X5Q" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="F27-69-QNS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="KvR-i1-X5Q" secondAttribute="bottom" constant="10" id="btE-hb-4YY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-375" y="141"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete.left.fill" catalog="system" width="128" height="102"/>
+        <image name="xmark.app" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
