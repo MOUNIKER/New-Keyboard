@@ -10,7 +10,7 @@ import UIKit
 class KeyboardViewController: UIInputViewController {
  
     @IBOutlet var nextKeyboardButton: UIButton!
-    @IBOutlet var numberButtons: [CustomKeyButton]!
+    @IBOutlet var numberButtons: [UIButton]!
     @IBOutlet var firstView: [UIView]!
     @IBOutlet var secondView: [UIView]!
     @IBOutlet var myKeyBoardView: UIView!
@@ -23,23 +23,21 @@ class KeyboardViewController: UIInputViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let nib = UINib(nibName: "NewkeyBoard", bundle: nil)
-        let objects = nib.instantiate(withOwner: self, options: nil)
-                view = objects[0] as? UIView
+        loadKeyboard()
         shuffleNumberKeypad()
 
         
         // Perform custom UI setup here
         self.nextKeyboardButton = UIButton(type: .system)
-        
+
         self.nextKeyboardButton.setTitle(NSLocalizedString("Next Keyboard", comment: "Title for 'Next Keyboard' button"), for: [])
         self.nextKeyboardButton.sizeToFit()
         self.nextKeyboardButton.translatesAutoresizingMaskIntoConstraints = false
-        
+
         self.nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
-        
+
         self.view.addSubview(self.nextKeyboardButton)
-        
+
         self.nextKeyboardButton.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
         self.nextKeyboardButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
     }
@@ -63,7 +61,7 @@ class KeyboardViewController: UIInputViewController {
         } else {
             textColor = UIColor.black
         }
-        self.nextKeyboardButton.setTitleColor(textColor, for: [])
+      self.nextKeyboardButton.setTitleColor(textColor, for: [])
     }
     @IBAction func numKeyTapped(_ sender: UIButton) {
         let  a = sender.titleLabel?.text ?? ""
@@ -116,6 +114,12 @@ class KeyboardViewController: UIInputViewController {
    
     func doneBtnTapped() {
         dismissKeyboard()
+    }
+    
+    func loadKeyboard(){
+        let nib = UINib(nibName: "NewkeyBoard", bundle: nil)
+        let objects = nib.instantiate(withOwner: self, options: nil)
+                view = objects[0] as? UIView
     }
     
 }
