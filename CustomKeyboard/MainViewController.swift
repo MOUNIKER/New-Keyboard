@@ -6,9 +6,7 @@
 import UIKit
 
 class MainViewController: UIViewController {
-    
-  
-    
+
     @IBOutlet weak var textField: UITextField!
   
     override func viewDidLoad() {
@@ -16,9 +14,13 @@ class MainViewController: UIViewController {
         textField.becomeFirstResponder()
 
     }
-    
-
 }
-
+extension MainViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.endEditing(true)
+        textField.resignFirstResponder()
+        return true
+    }
+}
 
 
